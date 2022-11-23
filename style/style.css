@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.textarea {
+  display: block;
+  width: 800px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+.key {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(91, 126, 241);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10%;
+  margin: 3px;
+  color: white;
+}
+
+.key::selection, .keyClicked::selection {
+  background: transparent;
+}
+
+.keyClicked {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(82, 61, 179);  
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20%;
+  color: white;
+  margin: 3px;
+}
+
+#input {
+  height: 100px;
+}
